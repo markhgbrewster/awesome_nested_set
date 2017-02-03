@@ -13,7 +13,8 @@ module CollectiveIdea
           def self_and_ancestors
             nested_set_scope.
               where(arel_table[left_column_name].lteq(left)).
-              where(arel_table[right_column_name].gteq(right))
+              where(arel_table[right_column_name].gteq(right)).
+              reorder("#{left_column_name} ASC")
           end
 
           # Returns the collection of all children of the parent, except self

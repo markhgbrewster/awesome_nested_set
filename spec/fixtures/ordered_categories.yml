@@ -1,0 +1,17 @@
+top_level:
+  id: 1
+  name: C
+  lft: 1
+  rgt: 10
+child_2:
+  id: 3
+  name: A
+  parent_id: 1
+  lft: 4
+  rgt: 7
+child_2_1:
+  id: 4
+  name: B
+  parent_id: 3
+  lft: 5
+  rgt: 6
